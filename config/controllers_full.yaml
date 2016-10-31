@@ -1,12 +1,6 @@
 controller_manager_ns: controller_manager
 controller_list:
-  - name: torso_controller
-    action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
-    default: true
-    joints:
-      - torso_1_joint
-      - torso_2_joint
+
   - name: left_arm_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
@@ -38,3 +32,24 @@ controller_list:
     joints:
       - head_1_joint
       - head_2_joint
+  
+  - name: torso_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - torso_1_joint
+      - torso_2_joint
+  - name: left_gripper_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - gripper_left_joint
+      
+  - name: right_gripper_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - gripper_right_joint
