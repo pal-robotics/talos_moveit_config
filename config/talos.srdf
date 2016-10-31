@@ -35,12 +35,13 @@
         <link name="gripper_left_motor_double_link" />
         <link name="gripper_left_motor_single_link" />
     </group>
-    <group name="right_arm_torso">
-        <chain base_link="base_link" tip_link="wrist_right_ft_tool_link" />
+    <group name="torso">
+        <chain base_link="torso_2_link" tip_link="base_link" />
     </group>
     <group name="both_arms_torso">
         <group name="left_arm" />
-        <group name="right_arm_torso" />
+        <group name="right_arm" />
+        <group name="torso" />
     </group>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="right_eef" parent_link="wrist_right_ft_tool_link" group="gripper_right" parent_group="right_arm" />
