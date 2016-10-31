@@ -23,3 +23,32 @@ controller_list:
   - name: fake_gripper_left_controller
     joints:
       - gripper_left_joint
+  - name: fake_right_arm_torso_controller
+    joints:
+      - arm_right_1_joint
+      - arm_right_2_joint
+      - arm_right_3_joint
+      - arm_right_4_joint
+      - arm_right_5_joint
+      - arm_right_6_joint
+      - arm_right_7_joint
+      - torso_1_joint
+      - torso_2_joint
+  - name: fake_both_arms_torso_controller
+    joints:
+      - arm_left_1_joint
+      - arm_left_2_joint
+      - arm_left_3_joint
+      - arm_left_4_joint
+      - arm_left_5_joint
+      - arm_left_6_joint
+      - arm_left_7_joint
+      - arm_right_1_joint
+      - arm_right_2_joint
+      - arm_right_3_joint
+      - arm_right_4_joint
+      - arm_right_5_joint
+      - arm_right_6_joint
+      - arm_right_7_joint
+      - torso_1_joint
+      - torso_2_joint
