@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: talos_description
+    relative_path: robots/talos_full.urdf.xacro
+  SRDF:
+    relative_path: config/talos.srdf
+  CONFIG:
+    generated_timestamp: 1477922093
