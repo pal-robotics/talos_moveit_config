@@ -31,6 +31,7 @@
         <link name="gripper_right_motor_double_link" />
         <link name="gripper_right_motor_single_link" />
         <joint name="gripper_right_joint" />
+        <chain base_link="wrist_right_ft_tool_link" tip_link="gripper_right_base_link" />
     </group>
     <group name="left_arm">
         <joint name="arm_left_1_joint" />
@@ -54,6 +55,7 @@
         <link name="gripper_left_motor_double_link" />
         <link name="gripper_left_motor_single_link" />
         <joint name="gripper_left_joint" />
+        <chain base_link="wrist_left_ft_tool_link" tip_link="gripper_left_base_link" />
     </group>
     <group name="torso">
         <joint name="torso_1_joint" />
@@ -74,17 +76,24 @@
         <group name="torso" />
     </group>
     <group name="right_leg">
+        <joint name="leg_right_1_joint" />
+        <joint name="leg_right_2_joint" />
+        <joint name="leg_right_3_joint" />
+        <joint name="leg_right_4_joint" />
+        <joint name="leg_right_5_joint" />
+        <joint name="leg_right_6_joint" />
+        <joint name="leg_right_sole_fix_joint" />
         <chain base_link="base_link" tip_link="right_sole_link" />
     </group>
     <group name="left_leg">
+        <joint name="leg_left_1_joint" />
+        <joint name="leg_left_2_joint" />
+        <joint name="leg_left_3_joint" />
+        <joint name="leg_left_4_joint" />
+        <joint name="leg_left_5_joint" />
+        <joint name="leg_left_6_joint" />
+        <joint name="leg_left_sole_fix_joint" />
         <chain base_link="base_link" tip_link="left_sole_link" />
-    </group>
-    <group name="both_arms_torso_grippers">
-        <group name="right_arm" />
-        <group name="gripper_right" />
-        <group name="left_arm" />
-        <group name="gripper_left" />
-        <group name="torso" />
     </group>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="right_eef" parent_link="wrist_right_ft_tool_link" group="gripper_right" parent_group="right_arm" />
