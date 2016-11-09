@@ -4,6 +4,14 @@ Changelog for package talos_moveit_config
 
 Forthcoming
 -----------
+* 0.2.1
+* Updated changelog
+* Update moveit_config for Talos
+* Created single torso group
+* Added controller manageer controllers for torso and grippers
+* Added more groups and controller manager configuration
+* Contributors: Hilario Tome, Luca
+
 * Update moveit_config for Talos
 * Created single torso group
 * Added controller manageer controllers for torso and grippers
