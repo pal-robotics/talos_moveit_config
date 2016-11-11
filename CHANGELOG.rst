@@ -2,6 +2,13 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix circular depenendency
+* Merge branch 'dubnium-devel' of gitlab:control/talos_moveit_config into dubnium-devel
+* Config tested on robot
+* Contributors: Luca, Victor Lopez
+
 0.2.2 (2016-11-09)
 ------------------
 * 0.2.1
