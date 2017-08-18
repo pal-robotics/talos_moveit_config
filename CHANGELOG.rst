@@ -2,6 +2,11 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added talos simple moveit controller manager
+* Contributors: Hilario Tomé
+
 0.2.3 (2016-11-11)
 ------------------
 * Fix circular depenendency
