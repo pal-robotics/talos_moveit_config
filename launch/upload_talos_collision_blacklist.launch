@@ -1,0 +1,3 @@
+<launch>
+  <param name="self_collision_blacklist" textfile="$(find talos_moveit_config)/config/talos.srdf" />
+</launch>
