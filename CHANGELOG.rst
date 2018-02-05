@@ -2,8 +2,8 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.5 (2018-02-05)
+------------------
 * added uploading of collision blacklist
 * Contributors: Hilario Tomé
 
