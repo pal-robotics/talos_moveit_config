@@ -2,6 +2,11 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added uploading of collision blacklist
+* Contributors: Hilario Tomé
+
 0.2.4 (2017-08-18)
 ------------------
 * added talos simple moveit controller manager
