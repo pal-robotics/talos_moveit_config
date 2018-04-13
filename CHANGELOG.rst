@@ -2,8 +2,8 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.6 (2018-04-13)
+------------------
 * Merge branch 'update-config' into 'dubnium-devel'
   regenerate talos srdf
   See merge request control/talos_moveit_config!1
