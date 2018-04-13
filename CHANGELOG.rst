@@ -2,6 +2,14 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'update-config' into 'dubnium-devel'
+  regenerate talos srdf
+  See merge request control/talos_moveit_config!1
+* regenerate talos srdf
+* Contributors: Hilario Tome, Victor Lopez
+
 0.2.5 (2018-02-05)
 ------------------
 * added uploading of collision blacklist
