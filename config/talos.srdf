@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <!--This does not replace URDF, and is not an extension of URDF.
     This is a format for representing semantic information about the robot structure.
     A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
@@ -94,6 +94,10 @@
         <joint name="leg_left_6_joint" />
         <joint name="leg_left_sole_fix_joint" />
         <chain base_link="base_link" tip_link="left_sole_link" />
+    </group>
+    <group name="both_legs">
+        <group name="left_leg" />
+        <group name="right_leg" />
     </group>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="right_eef" parent_link="wrist_right_ft_tool_link" group="gripper_right" parent_group="right_arm" />
@@ -543,6 +547,7 @@
     <disable_collisions link1="gripper_left_fingertip_3_link" link2="wrist_left_ft_tool_link" reason="Never" />
     <disable_collisions link1="gripper_left_fingertip_3_link" link2="wrist_right_ft_link" reason="Never" />
     <disable_collisions link1="gripper_left_fingertip_3_link" link2="wrist_right_ft_tool_link" reason="Never" />
+    <disable_collisions link1="gripper_left_inner_double_link" link2="gripper_left_inner_single_link" reason="Never" />
     <disable_collisions link1="gripper_left_inner_double_link" link2="gripper_left_motor_double_link" reason="Default" />
     <disable_collisions link1="gripper_left_inner_double_link" link2="gripper_right_fingertip_1_link" reason="Never" />
     <disable_collisions link1="gripper_left_inner_double_link" link2="gripper_right_fingertip_2_link" reason="Never" />
@@ -553,7 +558,6 @@
     <disable_collisions link1="gripper_left_inner_double_link" link2="wrist_left_ft_tool_link" reason="Never" />
     <disable_collisions link1="gripper_left_inner_double_link" link2="wrist_right_ft_link" reason="Never" />
     <disable_collisions link1="gripper_left_inner_double_link" link2="wrist_right_ft_tool_link" reason="Never" />
-    <disable_collisions link1="gripper_left_inner_double_link" link2="gripper_left_inner_single_link" reason="Never" />
     <disable_collisions link1="gripper_left_inner_single_link" link2="gripper_left_motor_double_link" reason="Never" />
     <disable_collisions link1="gripper_left_inner_single_link" link2="gripper_left_motor_single_link" reason="Default" />
     <disable_collisions link1="gripper_left_inner_single_link" link2="gripper_right_fingertip_2_link" reason="Never" />
@@ -615,11 +619,11 @@
     <disable_collisions link1="gripper_right_fingertip_3_link" link2="wrist_left_ft_tool_link" reason="Never" />
     <disable_collisions link1="gripper_right_fingertip_3_link" link2="wrist_right_ft_link" reason="Never" />
     <disable_collisions link1="gripper_right_fingertip_3_link" link2="wrist_right_ft_tool_link" reason="Never" />
+    <disable_collisions link1="gripper_right_inner_double_link" link2="gripper_right_inner_single_link" reason="Never" />
     <disable_collisions link1="gripper_right_inner_double_link" link2="gripper_right_motor_double_link" reason="Default" />
     <disable_collisions link1="gripper_right_inner_double_link" link2="leg_right_6_link" reason="Never" />
     <disable_collisions link1="gripper_right_inner_double_link" link2="wrist_right_ft_link" reason="Never" />
     <disable_collisions link1="gripper_right_inner_double_link" link2="wrist_right_ft_tool_link" reason="Never" />
-    <disable_collisions link1="gripper_right_inner_double_link" link2="gripper_right_inner_single_link" reason="Never" />
     <disable_collisions link1="gripper_right_inner_single_link" link2="gripper_right_motor_double_link" reason="Never" />
     <disable_collisions link1="gripper_right_inner_single_link" link2="gripper_right_motor_single_link" reason="Default" />
     <disable_collisions link1="gripper_right_inner_single_link" link2="leg_right_3_link" reason="Default" />
