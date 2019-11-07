@@ -2,7 +2,10 @@ moveit_setup_assistant_config:
   URDF:
     package: talos_description
     relative_path: robots/talos_full.urdf.xacro
+    xacro_args: --inorder foot_collision:=default enable_crane:=false
   SRDF:
     relative_path: config/talos.srdf
   CONFIG:
-    generated_timestamp: 1478681839
+    author_name: Luca Marchionni
+    author_email: luca.marchionni@pal-robotics.com
+    generated_timestamp: 1572976696
