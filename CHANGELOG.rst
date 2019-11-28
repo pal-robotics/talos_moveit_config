@@ -2,8 +2,8 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.1 (2019-11-28)
+------------------
 * Launch with moveit.rviz config by default
 * Merge branch 'add_move_group_both_legs' into 'dubnium-devel'
   regenerated talos moveit config
