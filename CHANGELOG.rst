@@ -2,8 +2,8 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.2 (2020-01-17)
+------------------
 * Merge branch 'moveit_fix' into 'dubnium-devel'
   fix moveit cartesian goals issue on robot
   See merge request control/talos_moveit_config!3
