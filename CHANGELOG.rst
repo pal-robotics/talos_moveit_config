@@ -2,6 +2,14 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'moveit_fix' into 'dubnium-devel'
+  fix moveit cartesian goals issue on robot
+  See merge request control/talos_moveit_config!3
+* fix moveit cartesian goals issue on robot
+* Contributors: Sai Kishor Kothakota
+
 0.3.1 (2019-11-28)
 ------------------
 * Launch with moveit.rviz config by default
