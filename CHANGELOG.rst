@@ -2,6 +2,14 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix-right-leg-collision' into 'dubnium-devel'
+  Fix collision between arm_right_7 and leg_right_3
+  See merge request control/talos_moveit_config!4
+* Fix collision between arm_right_7 and leg_right_3
+* Contributors: Victor Lopez, victor
+
 0.3.2 (2020-01-17)
 ------------------
 * Merge branch 'moveit_fix' into 'dubnium-devel'
