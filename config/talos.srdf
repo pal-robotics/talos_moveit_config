@@ -676,6 +676,7 @@
     <disable_collisions link1="head_2_link" link2="rgbd_link" reason="Adjacent" />
     <disable_collisions link1="head_2_link" link2="torso_1_link" reason="Never" />
     <disable_collisions link1="head_2_link" link2="torso_2_link" reason="Never" />
+    <disable_collisions link1="head_d435_camera_link" link2="head_2_link" reason="Adjacent" />
     <disable_collisions link1="imu_link" link2="leg_left_1_link" reason="Never" />
     <disable_collisions link1="imu_link" link2="leg_left_2_link" reason="Never" />
     <disable_collisions link1="imu_link" link2="leg_left_3_link" reason="Never" />
