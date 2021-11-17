@@ -779,4 +779,16 @@
     <disable_collisions link1="torso_1_link" link2="torso_2_link" reason="Adjacent" />
     <disable_collisions link1="wrist_left_ft_link" link2="wrist_left_ft_tool_link" reason="Adjacent" />
     <disable_collisions link1="wrist_right_ft_link" link2="wrist_right_ft_tool_link" reason="Adjacent" />
+    <disable_collisions link1="marker_foot_left" link2="leg_left_6_link" reason="Adjacent" />
+    <disable_collisions link1="marker_foot_right" link2="leg_right_6_link" reason="Adjacent" />
+    <disable_collisions link1="marker_torso_front" link2="base_link" reason="Adjacent" />
+    <disable_collisions link1="marker_torso_rear" link2="base_link" reason="Adjacent" />
+    <disable_collisions link1="marker_gripper_left" link2="arm_left_7_link" reason="Adjacent" />
+    <disable_collisions link1="marker_gripper_right" link2="arm_right_7_link" reason="Adjacent" />
+    <disable_collisions link1="marker_gripper_left" link2="gripper_left_base_link" reason="Adjacent" />
+    <disable_collisions link1="marker_gripper_right" link2="gripper_right_base_link" reason="Adjacent" />
+    <disable_collisions link1="marker_head_left" link2="head_2_link" reason="Adjacent" />
+    <disable_collisions link1="marker_head_right" link2="head_2_link" reason="Adjacent" />
+    <disable_collisions link1="marker_trunk_front" link2="torso_2_link" reason="Adjacent" />
+    <disable_collisions link1="marker_trunk_back" link2="torso_2_link" reason="Adjacent" />
 </robot>
