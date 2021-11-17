@@ -2,8 +2,8 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.4 (2021-11-17)
+------------------
 * Merge branch 'uedin_markers' into 'dubnium-devel'
   Disable collisions from the VICON markers to the adjacent links
   See merge request control/talos_moveit_config!5
