@@ -2,6 +2,15 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'uedin_markers' into 'dubnium-devel'
+  Disable collisions from the VICON markers to the adjacent links
+  See merge request control/talos_moveit_config!5
+* Disable collisions from the VICON markers to the adjacent links
+* Disable collision pair between d435 and head_2_link
+* Contributors: Adria Roig, Pierre Fernbach
+
 0.3.3 (2020-07-02)
 ------------------
 * Merge branch 'fix-right-leg-collision' into 'dubnium-devel'
