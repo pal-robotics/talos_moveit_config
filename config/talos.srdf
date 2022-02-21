@@ -115,6 +115,10 @@
     <passive_joint name="gripper_right_inner_single_joint" />
     <passive_joint name="gripper_right_fingertip_3_joint" />
     <passive_joint name="gripper_right_motor_single_joint" />
+    <passive_joint name="leg_right_flex_1_joint" />
+    <passive_joint name="leg_right_flex_2_joint" />
+    <passive_joint name="leg_left_flex_1_joint" />
+    <passive_joint name="leg_left_flex_2_joint" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="arm_left_1_link" link2="arm_left_2_link" reason="Adjacent" />
     <disable_collisions link1="arm_left_1_link" link2="arm_left_3_link" reason="Never" />
