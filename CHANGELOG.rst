@@ -2,6 +2,15 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add_flexibility' into 'dubnium-devel'
+  Update related to hip flexibility in simulation
+  See merge request control/talos_moveit_config!6
+* Add robot_description argument to move_group launch file, and remap the /robot_description topic to this value
+* Add flexibility joints as passive in the srdf
+* Contributors: Pierre Fernbach, saikishor
+
 0.3.4 (2021-11-17)
 ------------------
 * Merge branch 'uedin_markers' into 'dubnium-devel'
