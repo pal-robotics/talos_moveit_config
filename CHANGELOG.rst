@@ -2,8 +2,8 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.5 (2022-03-02)
+------------------
 * Merge branch 'add_flexibility' into 'dubnium-devel'
   Update related to hip flexibility in simulation
   See merge request control/talos_moveit_config!6
