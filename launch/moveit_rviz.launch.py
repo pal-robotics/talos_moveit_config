@@ -19,25 +19,9 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, OpaqueFunction
 from launch.substitutions import LaunchConfiguration
 from launch_pal.arg_utils import read_launch_argument
-from launch_pal.robot_utils import (get_arm,
-                                    get_end_effector,
-                                    get_ft_sensor,
-                                    get_robot_name)
-from launch_ros.actions import Node
 
-from moveit_configs_utils import MoveItConfigsBuilder
-from tiago_description.tiago_launch_utils import get_tiago_hw_suffix
-
-
-import os
-
-from ament_index_python.packages import get_package_share_directory
-from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, OpaqueFunction
-from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from moveit_configs_utils import MoveItConfigsBuilder
-from launch_pal.arg_utils import read_launch_argument
 
 
 def declare_launch_arguments() -> Dict:
