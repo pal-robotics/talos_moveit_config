@@ -75,72 +75,72 @@ joint_limits:
     max_acceleration: 0
   gripper_left_fingertip_1_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_left_fingertip_2_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_left_fingertip_3_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_left_inner_double_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_left_inner_single_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_left_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_left_motor_single_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_right_fingertip_1_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_right_fingertip_2_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_right_fingertip_3_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_right_inner_double_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_right_inner_single_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_right_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   gripper_right_motor_single_joint:
     has_velocity_limits: true
-    max_velocity: 1
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0
   leg_left_1_joint:
@@ -160,7 +160,7 @@ joint_limits:
     max_acceleration: 0
   leg_left_4_joint:
     has_velocity_limits: true
-    max_velocity: 7
+    max_velocity: 7.0
     has_acceleration_limits: false
     max_acceleration: 0
   leg_left_5_joint:
@@ -190,7 +190,7 @@ joint_limits:
     max_acceleration: 0
   leg_right_4_joint:
     has_velocity_limits: true
-    max_velocity: 7
+    max_velocity: 7.0
     has_acceleration_limits: false
     max_acceleration: 0
   leg_right_5_joint:
