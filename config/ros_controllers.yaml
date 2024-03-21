@@ -83,3 +83,7 @@ moveit_simple_controller_manager:
     joints:
       - head_1_joint
       - head_2_joint
+trajectory_execution:
+  allowed_execution_duration_scaling: 1.2
+  allowed_goal_duration_margin: 0.5
+  allowed_start_tolerance: 0.01
