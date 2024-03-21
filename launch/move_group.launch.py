@@ -26,12 +26,20 @@ from launch_pal.arg_utils import read_launch_argument
 
 def generate_launch_description():
 
+    sim_time_arg = DeclareLaunchArgument(
+        'use_sim_time', default_value='False', description='Use sim time'
+    )
+
+    use_sensor_manager_arg = DeclareLaunchArgument(name='use_sensor_manager',
+                                                   default_value='False',
+                                                   choices=['True', 'False'],
+                                                   description='Use moveit_sensor_manager \
+                                            for octomap')
+
     # Create the launch description and populate
     ld = LaunchDescription()
-    launch_args = declare_launch_arguments()
-
-    for arg in launch_args.values():
-        ld.add_action(arg)
+    ld.add_action(use_sensor_manager_arg)
+    ld.add_action(sim_time_arg)
 
     # Execute move_group node
     ld.add_action(OpaqueFunction(function=launch_setup))
@@ -39,52 +47,13 @@ def generate_launch_description():
     return ld
 
 
-def declare_launch_arguments() -> Dict:
-
-    arg_dict = {}
-
-    use_sim_time = DeclareLaunchArgument(
-        "use_sim_time", default_value="False", description="Use simulation time"
-    )
-
-    arg_dict[use_sim_time.name] = use_sim_time
-
-    use_sensor_manager = DeclareLaunchArgument(
-        "use_sensor_manager",
-        default_value="False",
-        description="Use sensor manager for octomap",
-    )
-
-    arg_dict[use_sensor_manager.name] = use_sensor_manager
-
-    robot_model = DeclareLaunchArgument(
-        "robot_model",
-        default_value="full_v2",
-        description="Robot model. ",
-        choices=["full_v2", "arm_right", "lower_body"],
-    )
-
-    arg_dict[robot_model.name] = robot_model
-
-    return arg_dict
-
-
 def launch_setup(context, *args, **kwargs):
-    robot_model = read_launch_argument("robot_model", context)
-    use_sensor_manager = read_launch_argument("use_sensor_manager", context)
 
-    robot_description_path = os.path.join(
-        get_package_share_directory("talos_description"),
-        "robots",
-        f"talos_{robot_model}.urdf.xacro",
-    )
-    mappings = {
-        "robot_model": robot_model,
-    }
+    use_sensor_manager = read_launch_argument("use_sensor_manager", context)
 
     robot_description_semantic = os.path.join(
         get_package_share_directory("talos_moveit_config"),
-        "config/srdf/talos.srdf",
+        "config/talos.srdf",
     )
 
     # Trajectory Execution Functionality
@@ -100,9 +69,12 @@ def launch_setup(context, *args, **kwargs):
         "publish_transforms_updates": True,
     }
 
+    use_sim_time = {
+        'use_sim_time': LaunchConfiguration('use_sim_time')
+    }
+
     moveit_config = (
         MoveItConfigsBuilder("talos")
-        .robot_description(file_path=robot_description_path, mappings=mappings)
         .robot_description_semantic(file_path=robot_description_semantic)
         .robot_description_kinematics(
             file_path=os.path.join("config", "kinematics_kdl.yaml")
@@ -121,14 +93,16 @@ def launch_setup(context, *args, **kwargs):
 
     moveit_config.to_moveit_configs()
 
+    # Start the actual move_group node/action server
     run_move_group_node = Node(
-        package="moveit_ros_move_group",
-        executable="move_group",
-        output="screen",
+        package='moveit_ros_move_group',
+        executable='move_group',
+        output='screen',
         emulate_tty=True,
         parameters=[
-            {"use_sim_time": LaunchConfiguration("use_sim_time")},
+            use_sim_time,
             moveit_config.to_dict(),
+            {'publish_robot_description_semantic': True}
         ],
     )
 
