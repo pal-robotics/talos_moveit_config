@@ -19,6 +19,7 @@
   <exec_depend>moveit_planners_ompl</exec_depend>
   <exec_depend>moveit_ros_visualization</exec_depend>
   <exec_depend>launch_pal</exec_depend>
+  <exec_depend>moveit_ros_perception</exec_depend>
   <exec_depend>moveit_configs_utils</exec_depend>
   <exec_depend>talos_description</exec_depend>  
 
