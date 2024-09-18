@@ -2,6 +2,23 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'ros2-migration' into 'humble-devel'
+  ROS 2 Migration
+  See merge request control/talos_moveit_config!8
+* Remove moveit_fake_controller_manager dependency
+* add moveit-ros-perception depend
+* re-structure of the move_group launch files
+* fix ros_controllers yaml file
+* fix config files
+* clean libraries moveit_rviz
+* launch files
+* licence and contributing
+* config files
+* migration of CMakeLists.txt and package.xml to ros2
+* Contributors: Adrià Roig, Sai Kishor Kothakota, ileniaperrella
+
 0.3.5 (2022-03-02)
 ------------------
 * Merge branch 'add_flexibility' into 'dubnium-devel'
