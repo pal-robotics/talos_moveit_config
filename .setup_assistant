@@ -1,8 +1,8 @@
 moveit_setup_assistant_config:
   URDF:
     package: talos_description
-    relative_path: robots/talos_full.urdf.xacro
-    xacro_args: --inorder foot_collision:=default enable_crane:=false
+    relative_path: robots/talos_full_v2.urdf.xacro
+    xacro_args: --inorder foot_collision:=default enable_crane:=false leg_camera:=true gripper_mount_type:=detachable gripper_camera:=true test:=false flexibility:=true disable_gazebo_camera:=false head_type:=default simulation:=false 
   SRDF:
     relative_path: config/talos.srdf
   CONFIG:
