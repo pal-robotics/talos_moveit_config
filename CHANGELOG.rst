@@ -2,8 +2,8 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.6 (2025-02-03)
+------------------
 * Merge branch 'add/detachable/gripper' into 'dubnium-devel'
   update the SRDF for the newly added camera links
   See merge request control/talos_moveit_config!9
