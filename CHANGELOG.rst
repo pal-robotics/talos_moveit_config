@@ -2,8 +2,8 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.1 (2025-02-05)
+------------------
 * Group parameters in a variable
 * Set robot_description_timeout to 60 seconds
 * Contributors: Noel Jimenez
