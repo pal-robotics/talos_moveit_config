@@ -2,6 +2,12 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Group parameters in a variable
+* Set robot_description_timeout to 60 seconds
+* Contributors: Noel Jimenez
+
 2.0.0 (2024-09-18)
 ------------------
 * Merge branch 'ros2-migration' into 'humble-devel'
