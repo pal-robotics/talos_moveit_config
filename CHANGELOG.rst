@@ -2,6 +2,14 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'sim_time' into 'humble-devel'
+  Fix use_sim_time
+  See merge request control/talos_moveit_config!11
+* Fix use_sim_time
+* Contributors: Adrià Roig, Sai Kishor Kothakota
+
 2.0.1 (2025-02-05)
 ------------------
 * Group parameters in a variable
