@@ -26,7 +26,7 @@ from launch_pal.arg_utils import read_launch_argument
 
 def generate_launch_description():
 
-    sim_time_arg = DeclareLaunchArgument(
+    use_sim_time_arg = DeclareLaunchArgument(
         'use_sim_time', default_value='False', description='Use sim time'
     )
 
@@ -39,7 +39,7 @@ def generate_launch_description():
     # Create the launch description and populate
     ld = LaunchDescription()
     ld.add_action(use_sensor_manager_arg)
-    ld.add_action(sim_time_arg)
+    ld.add_action(use_sim_time_arg)
 
     # Execute move_group node
     ld.add_action(OpaqueFunction(function=launch_setup))
