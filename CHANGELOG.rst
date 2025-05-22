@@ -2,8 +2,8 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.2 (2025-05-22)
+------------------
 * Merge branch 'sim_time' into 'humble-devel'
   Fix use_sim_time
   See merge request control/talos_moveit_config!11
