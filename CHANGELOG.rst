@@ -2,8 +2,8 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.3 (2025-11-25)
+------------------
 * Merge branch 'wbid' into 'humble-devel'
   Disable collision pair for the fingers
   See merge request control/talos_moveit_config!14
