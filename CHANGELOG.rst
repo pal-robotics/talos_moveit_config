@@ -2,6 +2,11 @@
 Changelog for package talos_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add move_group module
+* Contributors: Noel Jimenez
+
 2.0.3 (2025-11-25)
 ------------------
 * Merge branch 'wbid' into 'humble-devel'
